@@ -1,0 +1,18 @@
+modules:
+  macro:
+    - key: summittest-hello-world
+      function: main
+      title: summittest
+      description: Inserts Hello world!
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/f75445f2-d36f-421f-bb51-72e8ac0a6bbd
+permissions:
+  scopes: []
+  external:
+    fetch:
+      backend:
+        - https://ec2-3-111-35-194.ap-south-1.compute.amazonaws.com:5000/run
+
